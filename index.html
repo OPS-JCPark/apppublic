@@ -3,31 +3,39 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>냉장고콕</title>
-<meta name="description" content="이름만 쓰면 이미지·소비기한 자동 입력! 소비기한 알림, 가격 기록, 내 재료로 만드는 레시피 추천">
+<title>앱 목록</title>
+<meta name="description" content="개발한 앱의 소개와 개인정보처리방침">
 <style>
-  :root { --text:#2b2b2b; --sub:#6f6c66; --accent:#2f8f68; --soft:#e3f4ec; --bg:#f7f5f0; }
+  :root { --text:#2b2b2b; --sub:#6f6c66; --accent:#2f80ed; --bg:#f7f5f0; }
   body { margin:0; background:var(--bg); color:var(--text); font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif; line-height:1.7; }
-  main { max-width:640px; margin:0 auto; padding:56px 20px; text-align:center; }
-  h1 { font-size:30px; margin:16px 0 4px; }
-  p { color:var(--sub); font-size:16px; }
-  .links { display:grid; gap:12px; margin-top:32px; text-align:left; }
-  a.card { display:block; background:#fff; border-radius:16px; padding:18px 20px; color:var(--text); text-decoration:none; box-shadow:0 3px 10px rgba(122,106,80,.08); }
-  a.card strong { color:var(--accent); }
-  .icon { font-size:56px; }
+  main { max-width:640px; margin:0 auto; padding:56px 20px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  .lead { color:var(--sub); font-size:16px; margin:0 0 28px; }
+  .app { display:flex; gap:16px; align-items:center; background:#fff; border-radius:16px; padding:16px 18px; margin-bottom:12px; box-shadow:0 3px 10px rgba(122,106,80,.08); }
+  .app img { width:64px; height:64px; border-radius:16px; flex:none; }
+  .app h2 { font-size:18px; margin:0; }
+  .app p { margin:2px 0 6px; color:var(--sub); font-size:14px; }
+  .app a { color:var(--accent); font-size:14px; font-weight:700; text-decoration:none; margin-right:14px; }
   footer { margin-top:40px; font-size:13px; color:var(--sub); }
+  footer a { color:var(--sub); }
 </style>
 </head>
 <body>
 <main>
-  <div class="icon">🧊</div>
-  <h1>냉장고콕</h1>
-  <p>이름만 쓰면 이미지·소비기한 자동 입력!<br>소비기한 알림, 가격 기록, 내 재료로 만드는 레시피 추천</p>
-  <div class="links">
-    <a class="card" href="privacy/"><strong>개인정보처리방침</strong><br>앱이 다루는 정보와 처리 방법</a>
-    <a class="card" href="mailto:skymaund@gmail.com?subject=%5B%EC%9A%B0%EB%A6%AC%EC%A7%91%20%EB%83%89%EC%9E%A5%EA%B3%A0%5D%20%EB%AC%B8%EC%9D%98"><strong>문의하기</strong><br>skymaund@gmail.com</a>
+  <h1>앱 목록</h1>
+  <p class="lead">각 앱의 소개와 개인정보처리방침을 확인할 수 있어요.</p>
+
+  <!-- 새 앱은 아래 블록을 복사해 추가 (폴더 이름 = 패키지명 끝부분) -->
+  <div class="app">
+    <img src="myfridge/icon.png" alt="냉장고콕 아이콘">
+    <div>
+      <h2>냉장고콕</h2>
+      <p>소비기한 알림 · 가격 기록 · 추천 레시피</p>
+      <a href="myfridge/">앱 소개</a><a href="myfridge/privacy/">개인정보처리방침</a>
+    </div>
   </div>
-  <footer>Android 앱 · com.tory.myfridge</footer>
+
+  <footer>문의: <a href="mailto:skymaund@gmail.com">skymaund@gmail.com</a></footer>
 </main>
 </body>
 </html>
